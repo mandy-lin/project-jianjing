@@ -1,0 +1,91 @@
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/fix.css>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/fix.js"></script>
+<meta charset="utf-8"> 
+</head>
+<body> 
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+          <ul class="select" onclick="location.herf='fix.html'">維修</ul>
+            <li class="select" onclick="location.href='fix_record.html'">維修紀錄</li>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+  <content><div class="fix">
+  <div id="fix_search">    
+          <p><input name="date" type="date"><input type="submit" value="搜尋維修日期">&nbsp;&nbsp;&nbsp;
+          <input name="keyword" type="search" placeholder="請輸入客戶名稱"><input type="submit" value="搜尋客戶"> </p>
+      </div>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/03/31</label><br>大樓名稱:<label for="remind">a大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">地址</label><br>聯絡人:<label for="remind">李大米</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0987654321</label><br>機種:<label for="remind">電梯</label></p>
+      </div>
+      <p>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/04/01</label><br>大樓名稱:<label for="remind">朝陽大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">朝陽</label><br>聯絡人:<label for="remind">一一一</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0912345678</label><br>機種:<label for="remind">停車</label></p>
+      </div>
+      <p>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/04/01</label><br>大樓名稱:<label for="remind">朝陽大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">朝陽</label><br>聯絡人:<label for="remind">二二二</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0912345678</label><br>機種:<label for="remind">停車</label></p>
+      </div>
+      <div id="fix_data" style="display:none">
+        <p><h3>電梯維修紀錄</h3>
+        <from>
+            <fieldset>
+                日期 <label type="text" name="finance_name"></label><br>
+                使用許可證有效日期 <label type="text" name="finance_phone"></label><br>
+                產品編號 <label type="text" name="product_no"></label><br>
+                產品類型 <label type="text" name="product_name"></label><br>
+                大樓編號 <label type="text" name="build_no"></label><br>
+                大樓名稱 <label type="text" name="build_name"></label><br>
+                大樓地址 <label type="text" name="build_addiess"></label><br>
+                連絡電話 <label type="text" name="phone"></label><br>
+                進出時間 <label type="text" name="enter_time"></label><br>
+                預計施工時間 <label type="text" name="predict_time"></label><br>
+                實際施工時間 <label type="text" name="work_time"></label><br>
+            </fieldset>
+            <table style="border:0px;"  border='0'>
+            <tr><th>維修檢視項目</th><th>狀態</th><th>完成</th></tr>
+            <tr><td>機械式環境狀況</td><td>損壞</td><td><input type="checkbox"></td></tr>
+            </table>
+            <fieldset><div class="four">
+                <legend>維護檢視項目</legend>
+                    <p>機械式環境狀況：損壞<input type="checkbox" id="1"><label for="1">完成</label></p>
+                    <p>受電盤、抑御盤、信號盤：損壞<input type="checkbox" id="2"><label for="2">完成</label></p>
+                    <p>電動機、牽引機：損壞<input type="checkbox" id="3"><label for="3">完成</label></p>
+                    <p>電動發電機、啟動盤：損壞<input type="checkbox" id="4"><label for="4">完成</label></p>
+                    <p>車廂走行狀態：損壞<input type="checkbox" id="5"><label for="5">完成</label></p>
+                    <p>對外外部聯絡裝置：損壞<input type="checkbox" id="6"><label for="6">完成</label></p>
+                    <p>停電燈裝置：損壞<input type="checkbox" id="7"><label for="7">完成</label></p>
+                    <p>車廂內裝、照明、通風扇：損壞<input type="checkbox" id="8"><label for="8">完成</label></p>
+                    <p>車廂上環境裝置：損壞<input type="checkbox" id="9"><label for="9">完成</label></p>
+                    <p>門之開閉裝置：損壞<input type="checkbox" id="10"><label for="10">完成</label></p>
+                    <p>車廂著床狀態：損壞<input type="checkbox" id="11"><label for="11">完成</label></p>
+                    <p>門開閉狀態：損壞<input type="checkbox" id="12"><label for="12">完成</label></p>
+                    <p>導滑器、導論：損壞<input type="checkbox" id="13"><label for="13">完成</label></p>
+                    <p>給油器：損壞<input type="checkbox" id="14"><label for="14">完成</label></p>
+                    <p>乘車門、門踏板：損壞<input type="checkbox" id="15"><label for="15">完成</label></p>
+                    <p>乘場按鈕、指示燈：損壞<input type="checkbox" id="16"><label for="16">完成</label></p>
+            </div></fieldset>
+            
+                        
+            <input class="btn" type="submit" value="新增派工單" onclick="location.href='job_new.html'">
+            <input class="btn" type="submit" value="完成">
+          </from>
+      </div>
+  
+  </div></content>
+  </body>
+  </html>

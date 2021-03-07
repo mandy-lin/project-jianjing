@@ -1,0 +1,63 @@
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/client.css>
+<meta charset="utf-8"> 
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+          <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="select" onclick="location.href='client.html'">客戶</ul>
+          <li class="select" onclick="location.href='client_add.html'">新增客戶</li>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+    <div class="client">  
+    <p><h3>新增客戶資料</h3>
+    <from id=add_client>
+        <fieldset>
+            <legend>客戶</legend>
+            <p>客戶編號 <input type="text" name="c_no" required/></p>
+            <p>大樓名稱 <input type="text" name="c_name" required/></p>
+            <p>大樓電話 <input type="text" name="c_phone" required/></p>
+            <p>統一編號 <input type="text" name="c_idunmber" required/></p>
+            <p>大樓地址 <input type="text" name="c_address" required/></p>
+        </fieldset>
+        <fieldset>
+            <legend>主委</legend>
+            <p>主委姓名 <input type="text" name="chairman_name" required/></p>
+            <p>主委電話 <input type="text" name="chairman_phone" required/></p>
+            <p>主委地址 <input type="text" name="chairman_address" required/></p>
+        </fieldset>
+        <fieldset>
+            <legend>財委</legend>
+            <p>財委姓名 <input type="text" name="finance_name" required/></p>
+            <p>財委電話 <input type="text" name="finance_phone" required/></p>
+            <p>財委地址 <input type="text" name="finance_address" required/></p>
+        </fieldset>
+        <p>付款方式<input type="text" name="pay_type" required/></p>
+        <p>位置圖<input type="file" name="placeimg"></p>
+        <p>尺寸圖<input type="file" name="sizeimg"></p>
+
+    </from>
+    <br>
+    <input type="submit" value="新增">
+    </div>
+    </content>
+ <script src="/js/client.js"></script>
+</body> 
+
+
+</html>

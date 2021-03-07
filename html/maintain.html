@@ -1,0 +1,122 @@
+<!--保養-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/maintain.css>
+<meta charset="utf-8"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/maintain.js"></script>
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="select" onclick="location.href='maintain.html'">保養</ul>
+          <li class="select" onclick="location.href='maintain_record.html'">保養紀錄</li>
+          <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+      <div class="maintain">
+      <div id="m_search">    
+          <p><input name="date" type="date"><input type="submit" value="搜尋保養日期">&nbsp;&nbsp;&nbsp;
+          <input name="keyword" type="search" placeholder="請輸入客戶名稱"><input type="submit" value="搜尋客戶"> </p>
+      </div>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/03/31</label><br>大樓名稱:<label for="remind">a大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">地址</label><br>聯絡人:<label for="remind">李大米</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0987654321</label><br>機種:<label for="remind">電梯</label></p>
+      </div>
+      <p>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/04/01</label><br>大樓名稱:<label for="remind">朝陽大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">朝陽</label><br>聯絡人:<label for="remind">一一一</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0912345678</label><br>機種:<label for="remind">停車</label></p>
+      </div>
+      <p>
+      <div class="boxtext">
+        <p>日期:<label for="remind">2019/04/01</label><br>大樓名稱:<label for="remind">朝陽大樓</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大樓地址:<label for="remind">朝陽</label><br>聯絡人:<label for="remind">二二二</label>&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:<label for="remind">0912345678</label><br>機種:<label for="remind">停車</label></p>
+      </div>
+      <div id="maintain_data" style="display:none">
+        <p><h3>電梯保養紀錄</h3>
+        <from>
+            <fieldset>
+                日期 <label type="text" name="finance_name"></label><br>
+                使用許可證有效日期 <label type="text" name="finance_phone"></label><br>
+                產品編號 <label type="text" name="product_no"></label><br>
+                產品類型 <label type="text" name="product_type"></label><br>
+                大樓編號 <label type="text" name="build_no"></label><br>
+                大樓名稱 <label type="text" name="build_name"></label><br>
+                大樓地址 <label type="text" name="build_addiess"></label><br>
+                連絡電話 <label type="text" name="phone"></label><br>
+                預計施工時間 <label type="text" name="predict_time"></label><br>
+                進出時間 <label type="text" name="enter_time"></label>~<label type="text" name="enter_time"></label><br>
+                實際施工時間 <label type="text" name="work_time"></label><br>
+                保養時間 <input type="radio"> <label type="test" name="maintain_mouth">月保養</label><input type="radio"> <label type="test" name="maintain_season">季保養</label><input type="radio"> <label type="test" name="maintain_half">半年保養</label><input type="radio"> <label type="test" name="maintain_year">年保養</label>
+            </fieldset>
+            <p><h4>維護檢視項目</h4>
+            <fieldset>
+                <legend>月保養</legend>
+                    <p>機械式環境狀況<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>受電盤、抑御盤、信號盤<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>電動機、牽引機<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>電動發電機、啟動盤<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂走行狀態<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>對外外部聯絡裝置<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>停電燈裝置<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂內裝、照明、通風扇<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂上環境裝置<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>門之開閉裝置<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂著床狀態<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>門開閉狀態<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>導滑器、導論<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>給油器<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>乘車門、門踏板<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>乘場按鈕、指示燈<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+            </fieldset>
+            <fieldset>
+                <legend>季保養</legend>
+                    <p>車廂操作盤<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂門、門踏板<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>閉門安全裝置<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>門手動開放<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+            </fieldset>
+            <fieldset>
+                <legend>半年保養</legend>
+                    <p>電磁煞車器<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>乘場選擇器<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>調速器<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>升降路內、機坑內環境狀況<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>車廂、配重之轉向輪<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>主鋼索、調速鋼索、檢點<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>導軌檢點、鋼帶檢點<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>配重器<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>DrSW動作、Dr Lock機構檢點<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+            </fieldset>
+            <fieldset>
+                <legend>年保養</legend>
+                    <p>上、下部極限開關動作確認<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>緊急停止裝置檢點<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>移動電纜<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>緩衝器檢點<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+                    <p>各張力輪<input type="radio">正常<input type="radio">損壞<input type="radio">待料更換<input type="radio">無此裝置</p>
+            </fieldset>
+            
+            <input class="btn" type="submit" value="新增派工單" onclick="location.href='job_new.html'">
+            <input class="btn" type="submit" value="儲存">
+          </from>
+      </div>
+        </div>
+    </content>
+
+ 
+</body> 
+
+
+</html>

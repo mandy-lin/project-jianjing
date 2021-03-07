@@ -1,0 +1,111 @@
+<!--訂單-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/oder.css>
+<meta charset="utf-8">
+<script language="javascript"> 
+function printdiv(printpage) { //宣告控制列印的函式 引數是一個物件的內容將要被列印
+var newstr = printpage.innerHTML; //獲取要列印的內容
+var oldstr = document.body.innerHTML; //原來body中的內容
+document.body.innerHTML =newstr; //用將要列印的內容替換原來body中的內容
+window.print(); //開始列印
+document.body.innerHTML=oldstr; //再將原來body中的內容還原
+return false; } 
+window.onload=function(){
+var bt=document.getElementById("bt");
+var div_print=document.getElementById("div_print");
+bt.onclick=function()
+{printdiv(div_print);}
+}
+</script>
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+            <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="select" onclick="location.href='oder.html'">訂單</ul>
+          <li class="select" onclick="location.href='order_history.html'">歷史紀錄</li>
+          <li class="select" onclick="location.href='order_new.html'">新增訂單</li>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+  <content>
+    <div class="order">
+        <p><input name="keyword" type="search" placeholder="請輸入客戶名稱">
+        <input class="btn" type="submit" value="搜尋客戶"></p>
+      <div id="list">
+        <table>
+            <caption>未完成訂單列表</caption>
+              <tr>
+                  <th>訂單日期</th>
+                  <th>客戶名稱</th>
+                  <th>設備</th>
+                  <th>完工日期</th>
+                  <th>總價</th>
+                  <th>詳細</th>
+              </tr>
+            <tr>
+                <td>2019/10/4</td>
+                <td>安安大樓</td>
+                <td>電梯</td>
+                <td>2019/10/31</td>
+                <td>$300000</td>
+                <td><input class="show_detail" type='button' value="詳細">
+                <input type='button' onclick="location.href='#.html'" value="完成"></td>
+            </tr>
+        </table>
+        <p>
+    </div> 
+    <div id="detail_order" style="display:none">
+     <div class="boxtext">
+        <p>a大樓<br>客戶地址:<br>聯絡人:<br>聯絡電話:</p>
+    </div>
+    <p>訂單日期:</p>
+    <p>預計完工日期:</p>
+    <p>實際完工日期:</p>
+    <table>
+      <tr>
+        <th>設備</th>
+        <th>類型</th>
+        <th>驅動</th>
+        <th>傳動</th>
+        <th>單價</th>
+        <th>數量</th>
+        <th>小計</th>
+      </tr>
+      <tr> 
+        <td>電梯</td>
+        <td>簡易型</td>
+        <td>??</td>
+        <td>???</td>
+        <td>30000</td>
+        <td>1</td>
+        <td>30000</td>
+      </tr>
+      <tr>
+        <td colspan="5"></td>
+        <td>總計</td>
+        <td>30000</td>
+      
+      </tr>
+    </table>
+    </div>
+   </div>
+</content>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/order.js"></script>
+</body> 
+
+
+</html>

@@ -1,0 +1,82 @@
+<!--派工詳細-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/job.css>
+<meta charset="utf-8"> 
+</head> 
+<body> 
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+         <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="select" onclick="location.href='job.html'">派工</ul>
+          <li class="select" onclick="location.href='job_finish.html'">已完成</li>
+          <li class="select" onclick="location.href='job_new.html'">新增派工單</li>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+    <form id="job-detail">
+       <p1>狀態:<label>未完成</label></p1>
+      <fieldset>
+        <legend>客戶資料</legend>
+        <div class="job-client">
+        <p>大樓名稱:<label>A大樓</label></p>
+        <p>客戶地址:<label>地址</label></p>
+        <p>聯絡人:<label>a人</label></p>
+        <p>連絡電話:<label>電話</label></p>
+      </div>
+      <div class="job-product">
+        <p>產品類型:<lable>類型</lable></p>
+        <p>數量:<lable>1</lable></p>
+      </div>
+      </fieldset>
+      <fieldset>
+       <legend>施工項目</legend> 
+       <p>派工日期:<label>2019/01/06</label></p>
+      <p>施工團隊:<label><select name="type">
+                    <option selected>選擇團隊</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+               </select></label></p>
+      <p>團隊工作日期<input type="date"></p>
+      <p>團隊工作時段<input type="datetime"></p>
+      <p>團隊電話:<label>0912345678</label></p>
+      <p>負責人:<label>李先生</label></p>
+       <p>工作項目</p>
+       <p contenteditable="false"><input type="text"><input type="checkbox">完成</p>
+      <p><input type="text"><input type="checkbox">完成</p>
+      <p><input type="text"><input type="checkbox">完成</p>
+      <p><input type="text"><input type="checkbox">完成</p>
+      <p><input type="text"><input type="checkbox">完成</p>
+      <p><input type="text"><input type="checkbox">完成</p>
+        <p>預計完成日期<input type="date"></p>
+        <p>實際施工日期<input type="date"></p>
+        備註(不收費)<input type="checkbox" >備料完成<p><textarea style="width:300px;height:100px;"></textarea></p>
+        備註(收費)<input type="checkbox" >備料完成<p><textarea style="width:300px;height:100px;"></textarea></p>
+      注意事項<p><textarea style="width:300px;height:100px;" ></textarea></p>
+      </fieldset>
+      <input type="submit" value="儲存">
+
+      
+        
+      </form>   
+ 
+    </content>
+ 
+</body> 
+
+
+</html>

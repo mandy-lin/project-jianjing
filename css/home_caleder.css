@@ -1,0 +1,15 @@
+
+#calendar {
+   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 15px;
+    max-width:  750px;
+}
+#content{
+
+}
+th{
+background-color: rgba(191, 191, 191, 0.9);
+}
+
+

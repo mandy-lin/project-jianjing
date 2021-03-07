@@ -1,0 +1,68 @@
+<!--保養-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/maintain.css>
+<meta charset="utf-8"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/maintain_record.js"></script>
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="select" onclick="location.href='maintain.html'">保養</ul>
+          <li class="select" onclick="location.href='maintain_record.html'">保養紀錄</li>
+            <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content><div class="maintain">
+    <div id="m_search">    
+      <p><input name="keyword" type="search" placeholder="請輸入客戶名稱"><input type="submit" value="搜尋客戶"> </p>
+    </div>
+    <div id="list">
+        <table>
+            <caption>保養紀錄列表</caption>
+            <tr>
+                <th>保養日期</th>
+                <th>客戶名稱</th>
+                <th>產品類型</th>
+                <th>保養時間</th>
+                <th>保養詳細</th>
+            </tr>
+            <tr>
+                <td>2019/10/4</td>
+                <td>安安大樓</td>
+                <td>電梯</td>
+                <td>月保養</td>
+                <td><input type='button' onclick="location.href='maintain_datail.html'" value="詳細"></td>
+            </tr>
+             <tr>
+                <td>2019/10/4</td>
+                <td>安安大樓</td>
+                <td>電梯</td>
+                <td>月保養</td>
+                <td><input type='button' onclick="location.href='maintain_datail.html'" value="詳細"></td>
+                
+            </tr>
+        </table><p>
+    </div>  
+      
+    </div></content>
+
+</body>
+</html>
+        
+        
+        
+        

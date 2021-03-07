@@ -1,0 +1,86 @@
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/oder.css>
+<meta charset="utf-8">
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+           <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="select" onclick="location.href='oder.html'">訂單</ul>
+            <li class="select" onclick="location.href='order_history.html'">歷史紀錄</li>
+            <li class="select" onclick="location.href='order_new.html'">新增訂單</li>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+  <content>
+  <div class="order">
+  <p><input name="keyword" type="search" placeholder="請輸入客戶名稱"/>
+  <input class="btn" type="submit" value="搜尋客戶"></p>
+  
+  <table>
+    <tr>
+      <th>日期</th>
+      <th>客戶名稱</th>
+      <th>備註</th>
+    </tr> 
+    <tr>
+      <td>2019/05/03</td>
+      <td>A大樓</td>
+      <td><input class="show_olddetail" type="button" value="詳細"></td>
+    </tr>
+  </table>
+  <p>
+  <div id="detail_order" style="display:none">
+    <div class="boxtext">
+        <p>a大樓<br>客戶地址:<br>地址:<br>聯絡人:<br>連絡電話:</p>
+    </div>
+    <p>訂單日期:</p>
+    <table>
+      <tr>
+        <th>設備</th>
+        <th>類型</th>
+        <th>驅動</th>
+        <th>傳動</th>
+        <th>單價</th>
+        <th>數量</th>
+        <th>小計</th>
+      </tr>
+      <tr> 
+        <td>電梯</td>
+        <td>簡易型</td>
+        <td>??</td>
+        <td>???</td>
+        <td>30000</td>
+        <td>1</td>
+        <td>30000</td>
+      </tr>
+      <tr>
+        <td colspan="5"></td>
+        <td>總計</td>
+        <td>30000</td>
+      
+      </tr>
+  
+    
+    </table>
+  
+  
+  </div>
+  </div>
+  </content>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/order.js"></script>
+  </body>
+  </html>

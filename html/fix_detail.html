@@ -1,0 +1,105 @@
+<!--保養-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/fix.css>
+<meta charset="utf-8"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/fix.js"></script>
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+          <ul class="select" onclick="location.href='fix.html'">維修</ul>
+            <li class="select" onclick="location.href='fix_record.html'">維修紀錄</li>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content><div class="fix">
+    
+    <div id="fix_detail_data">
+    <p><h3>電梯維修紀錄</h3>
+    <from>
+        <fieldset>
+            日期 <label type="text" name="finance_name"></label><br>
+            使用許可證有效日期 <label type="text" name="finance_phone"></label><br>
+            產品編號 <label type="text" name="product_no"></label><br>
+            大樓編號 <label type="text" name="build_no"></label><br>
+            大樓名稱 <label type="text" name="build_name"></label><br>
+            大樓地址 <label type="text" name="build_addiess"></label><br>
+            連絡電話 <label type="text" name="phone"></label><br>
+            進出時間 <label type="text" name="enter_time"></label><br>
+            預計施工時間 <label type="text" name="predict_time"></label><br>
+            實際施工時間 <label type="text" name="work_time"></label><br>
+        </fieldset>
+        <p><h4>維護檢視項目</h4>
+        <fieldset>
+            <legend>月保養</legend>
+                <p>機械式環境狀況：<label type="text" id="mon1">正常</label>               
+                <p>受電盤、抑御盤、信號盤：<label type="text" id="mon2">正常</label></p> 
+                <p>電動機、牽引機：<label type="text" id="mon2">正常</label></p>          
+                <p>電動發電機、啟動盤：<label type="text" id="mon3">正常</label></p>
+                <p>車廂走行狀態：<label type="text" id="mon4">正常</label></p>
+                <p>對外外部聯絡裝置：<label type="text" id="mon5">正常</label></p>
+                <p>停電燈裝置：<label type="text" id="mon3">正常</label></p>
+                <p>車廂內裝、照明、通風扇：<label type="text" id="mon6">正常</label></p>
+                <p>車廂上環境裝置：<label type="text" id="mon7">正常</label></p>
+                <p>門之開閉裝置：<label type="text" id="mon8">正常</label></p>
+                <p>車廂著床狀態：<label type="text" id="mon9">正常</label></p>
+                <p>門開閉狀態：<label type="text" id="mon10">正常</label></p>
+                <p>導滑器、導論：<label type="text" id="mon11">正常</label></p>
+                <p>給油器：<label type="text" id="mon12">正常</label></p>
+                <p>乘車門、門踏板：<label type="text" id="mon13">正常</label></p>
+                <p>乘場按鈕、指示燈：<label type="text" id="mon14">正常</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>季保養</legend>
+                <p>車廂操作盤：<label type="text" id="season1">正常</label></p>
+                <p>車廂門、門踏板：<label type="text" id="season2">正常</label></p>
+                <p>閉門安全裝置：<label type="text" id="season3">正常</label></p>
+                <p>門手動開放：<label type="text" id="season4">正常</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>半年保養</legend>
+                <p>電磁煞車器：<label type="text" id="half1">正常</label></p>
+                <p>乘場選擇器：<label type="text" id="half2">正常</label></p>
+                <p>調速器：<label type="text" id="half3">正常</label></p>
+                <p>升降路內、機坑內環境狀況：<label type="text" id="half4">正常</label></p>
+                <p>車廂、配重之轉向輪：<label type="text" id="half5">正常</label></p>
+                <p>主鋼索、調速鋼索、檢點：<label type="text" id="half6">正常</label></p>
+                <p>導軌檢點、鋼帶檢點：<label type="text" id="half7">正常</label></p>
+                <p>配重器：<label type="text" id="half8">正常</label></p>
+                <p>DrSW動作、Dr Lock機構檢點：<label type="text" id="half9">正常</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>年保養</legend>
+                <p>上、下部極限開關動作確認：<label type="text" id="year1">正常</label></p>
+                <p>緊急停止裝置檢點：<label type="text" id="year2">正常</label></p>
+                <p>移動電纜：<label type="text" id="year3">正常</label></p>
+                <p>緩衝器檢點：<label type="text" id="year4">正常</label></p>
+                <p>各張力輪：<label type="text" id="year5">正常</label></p>
+        </fieldset>
+         <p>備註：
+          <label type="text">正常</label></p>
+      <input type="submit" value="編輯">
+    </from>
+    </div>
+    </div></content>
+
+</body>
+</html>
+        
+        
+        
+        

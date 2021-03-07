@@ -1,0 +1,119 @@
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/oder.css>
+<meta charset="utf-8">
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+          <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="select" onclick="location.href='oder.html'">訂單</ul>
+          <li class="select" onclick="location.href='order_history.html'">歷史紀錄</li>
+          <li class="select" onclick="location.href='order_new.html'">新增訂單</li>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+    <div id="div_print" class="order">
+        <p><input name="keyword" type="search" placeholder="請輸入客戶名稱"/>
+            <input id="search" type="submit" value="搜尋客戶"> &nbsp;&nbsp;
+            <input type="button" onclick="location.href='client_add.html'" value="新增客戶"></p>
+    <div id="new_order" style="display:none">
+     <div class="boxtext">
+        <p>a大樓<br>客戶地址:<br>地址:<br>聯絡人:<br>連絡電話:</p>
+    </div>
+    
+          
+          <div class="product">    
+        <select name="type">
+            <option selected>選擇類型</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    &nbsp;&nbsp;
+        <select name="device">
+            <option selected>選擇設備</option>
+            <option>a</option>
+            <option>b</option>
+            <option>c</option>
+            <option>d</option>
+            <option>e</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="drive">
+            <option selected>選擇驅動</option>
+            <option>aa</option>
+            <option>bb</option>
+            <option>cc</option>
+            <option>dd</option>
+            <option>ee</option>
+        </select>
+        &nbsp;&nbsp;
+        <select name="transmission">
+            <option selected>選擇傳動</option>
+            <option>aaa</option>
+            <option>bbb</option>
+            <option>ccc</option>
+            <option>ddd</option>
+            <option>eee</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="btn" type="submit" value="新增">
+      </div>
+        <table name="product" border="1px">
+          <caption>新訂單</caption>
+          <p>訂單日期:(預設今天)</p>
+          <p>預計完工日期:</p>
+          <p>實際完工日期:<input type="date"></p>
+          <tr>
+                  <th>類型</th>
+                  <th>單價</th>
+                  <th>設備</th>
+                  <th>驅動</th>
+                  <th>傳動</th>
+                  <th>數量</th>
+                  <th>小計</th>
+              </tr>
+            <tr>
+                <td>電梯</td>
+                <td>$</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><input type="number" ></td>
+                <td>$</td>
+            </tr>
+            <tr>
+
+                <td colspan="5">總計</td>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="儲存"></td>
+            </tr>
+            </table>
+        
+      <input type='button' onclick="location.href='job_new.html'" value="新增派工單">
+
+   </div>
+      
+    </div>
+    </content>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/order.js"></script>
+</body> 
+
+
+</html>

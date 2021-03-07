@@ -1,0 +1,92 @@
+<!--派工-->
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/css/home.css>
+<link rel=stylesheet href=/css/job.css>
+
+<meta charset="utf-8"> 
+</head> 
+<body> 
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+         <ul class="carte" onclick="location.href='fix.html'">維修</ul>
+          <ul class="select" onclick="location.href='job.html'">派工</ul>
+          <li class="select" onclick="location.href='job_finish.html'">已完成</li>
+          <li class="select" onclick="location.href='job_new.html'">新增派工單</li>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="carte" onclick="location.href='client.html'">客戶</ul>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+  
+        <div class="undone">
+        <table id='jobthing'>
+            <caption>未完成派工單</caption>
+            <tr>
+                <th>派工日期</th>
+                <th>大樓名稱</th>
+                <th>施工團隊</th>
+                <th>團隊電話</th>
+                <th>      </th>
+            </tr>
+            
+            <tr>
+                <td class=data>1</td>
+                <td class=build>1</td>
+                <td class=team>1</td>
+                <td class=phone>1</td>
+                <td><input id='ok' type="button" value="完成">
+                <input type='button' onclick="location.href='job_detail.html'" value="詳細"></td>
+            </tr>
+            <tr>
+                <td class=data>2</td>
+                <td class=build>2</td>
+                <td class=team>2</td>
+                <td class=phone>2</td>
+                <td><input id='ok' type="submit" value="完成">
+                <input type='button' onclick="location.href='job_detail.html'" value="詳細"></td>
+            </tr>
+        </table>
+         <table id='jobfinishlist'>  
+            <caption>已完成派工單</caption>
+            <tr>
+                <th>派工日期</th>
+                <th>大樓名稱</th>
+                <th>施工團隊</th>
+                <th>團隊電話</th>
+                <th>      </th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><input type='button' onclick="location.href='job_detail.html'" value="詳細"></td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td><input type='button' onclick="location.href='job_detail.html'" value="詳細"></td>
+            </tr>
+
+
+        </table>
+        </div>       
+    </content>
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="/js/job.js"></script>
+
+</html>

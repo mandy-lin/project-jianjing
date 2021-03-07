@@ -1,0 +1,107 @@
+<!doctype html> 
+<html>
+<head>
+<title>健璟實業股份有限公司</title>
+<link rel=stylesheet href=/project/css/home.css>
+<link rel=stylesheet href=/project/css/client.css>
+<meta charset="utf-8"> 
+</head> 
+<body> 
+
+    <header>
+    <h1>健璟實業股份有限公司</h1>
+    </header>
+  <aside>
+          <ul class="carte" onclick="location.href='homepage.html'">首頁</ul>
+          <ul class="carte" onclick="location.href='maintain.html'">保養</ul>
+          <ul class="carte" onclick="location.href='job.html'">派工</ul>
+          <ul class="carte" onclick="location.href='price.html'">報價</ul>
+          <ul class="carte" onclick="location.href='oder.html'">訂單</ul>
+          <ul class="carte" onclick="location.href='product.html'">產品</ul>
+          <ul class="select" onclick="location.href='client.html'">客戶</ul>
+          <li class="select" onclick="location.href='client_add.html'">新增客戶</li>
+          <ul class="carte" onclick="location.href='contract.html'">合約管理</ul>
+  </aside>
+    <content>
+    <div class="client">     
+        <select name="area">
+            <option selected>選擇區域</option>
+            <option>太平區</option>
+            <option>霧峰區</option>
+            <option>大里區</option>
+            <option>北屯區</option>
+            <option>東區</option>
+        </select>
+    &nbsp;&nbsp;
+        <select name="c_name">
+            <option selected>選擇名稱</option>
+            <option>aa</option>
+            <option>bb</option>
+            <option>cc</option>
+            <option>dd</option>
+            <option>ee</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" onclick="location.href='client_search.html'" value="搜尋">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" onclick="location.href='client_add.html'" value="新增客戶">
+        <br>
+        <br>
+        <table name="c_list" border="1px">
+            <tr>
+                <th>客戶編號</th>
+                <th>客戶名稱</th>
+                <th>聯絡人</th>
+                <th>電話</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><input type='button' onclick="location.href='#'" value="編輯"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td><input type='button' onclick="location.href='#'" value="編輯"></td>
+            </tr>
+        </table>
+    <p><h3>編輯客戶資料</h3>
+    <from id=add_client>
+        <fieldset>
+            <legend>客戶</legend>
+            <p>客戶編號 <input type="text" name="c_no" required></p>
+            <p>客戶名稱 <input type="text" name="c_name" required></p>
+            <p>客戶電話 <input type="text" name="c_phone" required></p>
+            <p>統一編號 <input type="text" name="c_idunmber" required></p>
+            <p>客戶地址 <input type="text" name="c_address" required></p>
+        </fieldset>
+        <fieldset>
+            <legend>主委</legend>
+            <p>主委姓名 <input type="text" name="chairman_name"></p>
+            <p>主委電話 <input type="text" name="chairman_phone"></p>
+            <p>主委地址 <input type="text" name="chairman_address"></p>
+        </fieldset>
+        <fieldset>
+            <legend>財委</legend>
+            <p>財委姓名 <input type="text" name="finance_name"></p>
+            <p>財委電話 <input type="text" name="finance_phone"></p>
+            <p>財委地址 <input type="text" name="finance_address"></p>
+        </fieldset>
+        <p>位置圖<input type="file" name="placeimg"></p>
+        <p>尺寸圖<input type="file" name="sizeimg"></p>
+        <p><h4>合約管理</h4>
+        <hr>
+        <p>合約期間<input type="date" name="deal_time"></p>
+        <p>合約金額<input type="text" name="deal_money"></p>
+    </from>
+    <br>
+    <input type="submit" value="儲存"></div>
+    </content>
+    </body>
+    </html>
+        
